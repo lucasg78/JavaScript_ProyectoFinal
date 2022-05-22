@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>30325-JavaScript: GALLO - Proyecto Final</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+
+  <!-- NavBar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container px-4">
+      <a class="navbar-brand" href="./operaciones.html">Simulador</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Menú principal de operaciones -->
+  <div id="operaciones">
+    <div id="encabezadoMenuOp">
+      <h2 class="configTitulo">Operaciones</h2>
+      <h3 class="configSubTitulo">
+        Seleccione la operación que desea realizar
+      </h3>
+    </div>
+    <div id="menuOperaciones">
+      <div class="botonesOperacion">
+        <a class="btnOp transfPropia" id="TransfPropia">Transferencia entre cuentas propias</a>
+      </div>
+      <div class="botonesOperacion">
+        <a class="btnOp transfTerceros" id="TransfTerceros">Transferencia a cuenta de terceros</a>
+      </div>
+      <div class="botonesOperacion">
+        <a class="btnOp dolares" id="cvDolares">Compra de dólares</a>
+      </div>
+      <div class="botonesOperacion">
+        <a class="btnOp saldos" id="saldos">Resumen de operaciones</a>
+      </div>
+      <div class="botonesOperacion">
+        <a href="./principal.html" class="btnOp salirOp" id="salirMenu">Salir</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Transferencia a cuenta propia -->
+  <div id="transfPropia0">
+    <div id="borrarTransfPropia">
+    </div>
+  </div>
+  <div id="transfPropia2"></div>
+  <!-- Fin transferencia a cuenta propia -->
+
+  <!-- Transferencia a cuenta de terceros -->
+  <div id="transfTerceros0">
+    <div id="borrarTransfTerceros">
+    </div>
+  </div>
+  <div id="transfTerceros1"></div>
+  <!-- Fin transferencia a cuenta propia -->
+
+  <!-- Compra de dólares -->
+  <div id="cvDolares0">
+    <div id="borrarCVDolares">
+    </div>
+    <div id="tipoDeCambio"></div>
+  </div>
+  <div id="cvDolares1"></div>
+  <!-- Fin compra de dólares -->
+
+  <!-- Resumen de operaciones -->
+  <div id="consSaldos"></div>
+  <!-- Fin resumen de operaciones -->
+
+  <!-- Scripts js -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../js/main.js"></script>
+
+</body>
+
+</html>

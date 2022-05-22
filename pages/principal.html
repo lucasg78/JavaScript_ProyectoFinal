@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>30325-JavaScript: GALLO - Proyecto Final</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body id="page-top">
+
+    <!-- NavBar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <div class="container px-4">
+            <a class="navbar-brand" href="./principal.html">Simulador</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span></button>
+        </div>
+    </nav>
+
+    <!-- Menú principal -->
+    <div id="menuPrincipal">
+        <div class="botones">
+            <a class="btnOp azul" id="loginCliente">Ingresar</a>
+        </div>
+        <div class="botones">
+            <a class="btnOp verde" id="nuevoRegistro">Registrarme</a>
+        </div>
+        <div class="botones">
+            <a class="btnOp rojo" id="recuperoClave">Recuperar clave</a>
+        </div>
+        <div class="botones">
+            <button class="btn salirPpal" id="salirMenuPpal">Salir</button>
+        </div>
+    </div>
+
+    <!-- Menú de ingreso de usuario existente -->
+    <div id="menuLogin">
+        <div id="borrarMenuLogin">
+            <form id="formLogin">
+                <label for="dniLogin" id="labelArriba">DNI</label><br>
+                <input type="text" name="dniLogin" id="dniLogin" class="input" required><br><br>
+                <label for="password" id="labelDato">Clave digital</label><br>
+                <input type="password" name="claveLogin" id="claveLogin" class="input" required><br><br>
+                <input type="submit" class="btnOp ingreso" id="ingresar" value="Ingresar"><br>
+                <a href="./principal.html" class="btnOp volverPpal" id="volver">Volver</a>
+            </form>
+        </div>
+    </div>
+    <div id="clienteLogin"></div>
+    <!-- Fin menú de ingreso de usuario existente -->
+
+    <!-- Menú recuperar clave -->
+    <div id="menuClave">
+        <div id="borrarMenuClave">
+            <form id="formRecuperarClave">
+                <label for="dniBuscar" id="labelArriba">DNI</label><br>
+                <input type="text" name="dniBuscar" id="dniBuscar" class="input" required><br>
+                <div id="clienteEncontrado"></div>
+                <div id="claveRecuperada">
+                    <input type="submit" class="btnOp recupero" id="ingresar" value="Recuperar clave">
+                </div>
+                <a href="./principal.html" class="btnOp volverPpal" id="volver">Volver</a>
+            </form>
+        </div>
+    </div>
+    <div id="clienteEncontrado"></div>
+    <!-- Fin menú recuperar clave -->
+
+    <!-- Registro de nuevo cliente -->
+    <div id="menuNuevoCliente">
+        <div id="borrarMenuNuevoCliente">
+            <form id="formNuevoCliente">
+                <label for="nombre" id="labelArriba">Nombre</label><br>
+                <input type="text" name="nombre" id="nombre" class="input" required><br>
+                <label for="apellido" id="labelDato">Apellido</label><br>
+                <input type="text" name="apellido" id="apellido" class="input" required><br>
+                <label for="dni" id="labelDato">DNI</label><br>
+                <input type="text" name="dni" id="dni" class="input" pattern=".{8}" title="Debe contener ocho números"
+                    required><br>
+                <label for="edad" id="labelDato">Edad</label><br>
+                <input type="text" name="edad" id="edad" class="input" pattern=".{2}" title="Debe contener dos números"
+                    required><br>
+                <label for="clave" id="labelDato">Clave digital</label><br>
+                <input type="password" name="clave" id="clave" class="input"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                    title="Debe contener al menos seis caracteres que incluyan al menos un número, una mayúscula y una minúscula"
+                    required><br>
+                <input type="submit" class="btnOp registro" id="nUser" value="Registrarme"><br>
+                <a href="./principal.html" class="btnOp volverPpal" id="volver">Volver</a>
+            </form>
+        </div>
+    </div>
+    <div id="nuevoCliente"></div>
+    <!-- Fin registro de nuevo cliente -->
+
+    <!-- Scripts js -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
