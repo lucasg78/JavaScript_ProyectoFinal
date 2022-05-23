@@ -634,7 +634,7 @@ function abrirMenuOp(menu) {
       .catch((error) => {
         Swal.fire({
           title: "Error",
-          text: "No se puede realizar la operación en este momento, por favor intente más tarde",
+          text: "No se puede realizar la operación en estos momentos, por favor intente más tarde",
           icon: "error",
           imageWidth: 400,
           imageHeight: 200,
