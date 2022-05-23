@@ -630,7 +630,18 @@ function abrirMenuOp(menu) {
               )}`;
             });
         }
-      });
+      })
+      .catch((error) => {
+        Swal.fire({
+          title: "Error",
+          text: "No se pudo completar la operación, intente más tarde",
+          icon: "error",
+          imageWidth: 400,
+          imageHeight: 200,
+          showConfirmButton: true,
+        });
+        console.log('error', error)
+      })
     // Fin de la petición
     // Función confirmar compra de dólares
     if (document.querySelector("#cvDolares0")) {
